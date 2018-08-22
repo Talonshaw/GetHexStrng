@@ -1,0 +1,33 @@
+﻿<Window x:Class="floattobyte.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:floattobyte"
+        mc:Ignorable="d"
+        Title="数据转换" Height="285" Width="480">
+    <Viewbox>
+        <ScrollViewer VerticalScrollBarVisibility="Disabled" Height="255" Width="474">
+            <Grid Height="255" Width="474">
+                <TextBox x:Name="TextBox_Float" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,45,0,0" TextChanged="TextBox_Float_TextChanged" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_Output" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="230,45,0,0" VerticalContentAlignment="Center" TextChanged="TextBox_Output_TextChanged" MaxLength="11" MaxLines="1"/>
+                <Label Content="Float" HorizontalAlignment="Left" Margin="15,45,0,0" VerticalAlignment="Top"/>
+                <Label Content="十六进制Byte[]数组" HorizontalAlignment="Left" Margin="230,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBox_Double" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,85,0,0" TextChanged="TextBox_Double_TextChanged" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_Output1" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="230,85,0,0" VerticalContentAlignment="Center" MaxLength="23" MaxLines="1" TextChanged="TextBox_Output1_TextChanged"/>
+                <Label Content="Double" HorizontalAlignment="Left" Margin="15,85,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBox_Int" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,125,0,0" TextChanged="TextBox_Int_TextChanged" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_Output2" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="230,125,0,0" VerticalContentAlignment="Center" MaxLength="11" TextChanged="TextBox_Output2_TextChanged"/>
+                <Label Content="Int" HorizontalAlignment="Left" Margin="15,125,0,0" VerticalAlignment="Top"/>
+                <Label Content="数据类型" HorizontalAlignment="Left" Margin="71,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBox_Uint" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,165,0,0" TextChanged="TextBox_Uint_TextChanged" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_Output3" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="230,165,0,0" VerticalContentAlignment="Center" MaxLength="11" TextChanged="TextBox_Output3_TextChanged"/>
+                <Label Content="Uint" HorizontalAlignment="Left" Margin="15,165,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TextBox_String" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="71,205,0,0" TextChanged="TextBox_String_TextChanged" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="TextBox_Output4" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="230,205,0,0" VerticalContentAlignment="Center" TextChanged="TextBox_Output4_TextChanged"/>
+                <Label Content="String" HorizontalAlignment="Left" Margin="15,205,0,0" VerticalAlignment="Top"/>
+
+            </Grid>
+        </ScrollViewer>
+    </Viewbox>
+</Window>
